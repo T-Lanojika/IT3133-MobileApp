@@ -1,10 +1,10 @@
 import { StyleSheet, View } from 'react-native';
-import { Text, Divider } from 'react-native-paper';
+import { Text, Divider ,Button } from 'react-native-paper';
 
 
 export default function Home() {
     return (
-        <View>
+        <>
             <Text variant="headlineLarge">Headline Large</Text>
             <Divider />
             <Text variant="bodyMedium" style={styles.body}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -25,8 +25,13 @@ export default function Home() {
                 centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                
+
             </Text>
-        </View>
+            <Button icon="camera" mode="outlined" onPress={() => console.log('Pressed')}>
+    Press me
+  </Button>
+        </>
 
     )
 }
